@@ -1,0 +1,16 @@
+{
+  "demo@example.com": {
+    "password_hash": "68700b9ce02201aa77fd9ba1fec23ed5:3ecb23dd329eff8cf285bb4e30d99782d70e9f21dc5638fa6f72b639afdb3edb",
+    "name": "Demo User",
+    "role": "student",
+    "created_at": "2025-09-23T16:23:01.649015",
+    "user_id": "demo_user_123"
+  },
+  "vickyvignesh9342@gmail.com": {
+    "password_hash": "b55da5414cc0a6b66d8884db100b2305:7041cafea08490335db9934db805528032de3a6d88836dc282466bf890ebfcc4",
+    "name": "Vignesh Tamilselvan",
+    "role": "student",
+    "created_at": "2025-09-23T16:27:35.320205",
+    "user_id": "demo_user_6ee9e9487f8663cf"
+  }
+}
