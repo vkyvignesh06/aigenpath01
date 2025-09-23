@@ -1,0 +1,153 @@
+Project Description
+
+Title: Learning Path Generator with Model Context Protocol
+
+Introduction
+
+Students face the challenge of navigating a vast sea of online resources without clear direction. Many learners are uncertain about what to study, in what order, and how to stay consistent. Existing platforms rarely adapt to each student’s goals, background knowledge, and preferred learning styles.
+
+This project introduces an AI-powered smart coaching assistant that generates personalized day-wise learning paths, delivers them in text and voice formats, and follows up with learners through automated reminders. Built with LangChain, Google Gemini, Streamlit, and MCP integrations, the system supports secure authentication and authorization, ensuring that every learner’s data and progress remain private.
+
+
+---
+
+Objectives
+
+1. To design a secure, AI-driven platform that generates personalized learning roadmaps.
+
+
+2. To integrate user authentication and authorization for safe access to personal learning data.
+
+
+3. To generate day-wise plans with curated YouTube content stored in Google Drive or Notion.
+
+
+4. To enhance accessibility by converting lessons into natural voice audio with Eleven Labs API.
+
+
+5. To provide automated reminders via WhatsApp, SMS, and voice calls using Twilio.
+
+
+6. To showcase how MCP can contextualize learning goals and adapt plans dynamically.
+
+
+
+
+---
+
+Authentication & Authorization
+
+Authentication:
+
+Implemented using Firebase Authentication (Google Login, Email/Password, or OTP).
+
+Ensures that only registered users can access the system.
+
+
+Authorization:
+
+Each user has a dedicated profile and database space for their learning path.
+
+Users can only view and update their own learning plan.
+
+Role-based access:
+
+Student Role: Can view, listen, and receive reminders.
+
+Admin Role: Can manage system settings, oversee integrations, and monitor analytics.
+
+
+
+
+This guarantees data security, privacy, and personalized experiences for each learner.
+
+
+---
+
+System Architecture & Workflow
+
+1. User Authentication (Login):
+
+Users sign up/sign in securely (Google, Email, or OTP).
+
+Authorization ensures data isolation per user.
+
+
+
+2. Learning Path Generation:
+
+Input: Learning goal (e.g., “Learn communication skills”).
+
+AI Engine (Gemini + LangChain + MCP) generates structured day-wise plans.
+
+
+
+3. Storage & Access:
+
+Plans are stored in Google Drive or Notion under user’s account.
+
+YouTube playlist automatically created.
+
+
+
+4. Voice Conversion:
+
+Daily lessons converted into audiobook-style narration via Eleven Labs.
+
+
+
+5. Follow-ups (Twilio Integration):
+
+User sets reminder time.
+
+Twilio triggers WhatsApp, SMS, or call with lesson summary.
+
+
+
+6. Secure Dashboard (Streamlit):
+
+Users access personalized dashboard only after login.
+
+Options: View/Edit path, play audio, reschedule reminders.
+
+
+
+
+
+---
+
+Expected Outcomes
+
+A secure, personalized AI learning assistant.
+
+Authentication-protected dashboard where users can manage their learning journey.
+
+Audio-based lessons for greater accessibility.
+
+Daily reminders to keep learners consistent.
+
+A futuristic model of AI + MCP + voice + communication APIs working together.
+
+
+
+---
+
+Advantages
+
+Ensures secure, private access for each learner.
+
+Provides structured study paths tailored to goals.
+
+Improves accessibility for visually impaired or busy learners.
+
+Encourages accountability with automated reminders.
+
+Enables scalable role-based access control for admins and students.
+
+
+
+---
+
+Keywords
+
+AI Learning Path, Voice Reminder, Twilio, Eleven Labs, Google Gemini, LangChain, Streamlit, MCP, Educational Automation, Authentication, Authorization, Smart Coaching Assistant
