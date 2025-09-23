@@ -7,6 +7,17 @@
       "preferred_difficulty": "beginner",
       "preferred_duration": 14,
       "updated_at": "2025-09-23 16:31:50.056817"
+    },
+    "demo_user_123": {
+      "api_keys": {
+        "gemini_api_key": "test-gemini-key-123",
+        "elevenlabs_api_key": "test-elevenlabs-key-456",
+        "twilio_account_sid": "TWILIO_SID_ABC",
+        "twilio_auth_token": "TWILIO_TOKEN_123",
+        "twilio_phone_number": "",
+        "youtube_api_key": "YT_KEY_789",
+        "updated_at": "2025-09-23T17:00:08.014786"
+      }
     }
   },
   "learning_paths": {
@@ -840,6 +851,1668 @@
       "id": "path_20250923_163331",
       "user_id": "demo_user_6ee9e9487f8663cf",
       "created_at": "2025-09-23 16:33:31.906572"
+    },
+    "path_20250923_165827": {
+      "goal": "python programming",
+      "duration_days": 14,
+      "difficulty": "beginner",
+      "type": "normal",
+      "description": "A comprehensive 14-day journey to master python programming at beginner level",
+      "created_with_ai": false,
+      "daily_plans": [
+        {
+          "day": 1,
+          "title": "Day 1: Introduction to python programming",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 1 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 1: Introduction to python programming",
+              "description": "A comprehensive introduction to Day 1: Introduction to python programming covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+1:+Introduction+to+python+programming"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 1: Introduction to python programming Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 1: Introduction to python programming.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+1:+Introduction+to+python+programming+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 2,
+          "title": "Day 2: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 2 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 2: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 2: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+2:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 2: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 2: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+2:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 3,
+          "title": "Day 3: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 3 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 3: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 3: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+3:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 3: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 3: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+3:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 4,
+          "title": "Day 4: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 4 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 4: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 4: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+4:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 4: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 4: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+4:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 5,
+          "title": "Day 5: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 5 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 5: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 5: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+5:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 5: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 5: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+5:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 6,
+          "title": "Day 6: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 6 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 6: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 6: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+6:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 6: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 6: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+6:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 7,
+          "title": "Day 7: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 7 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 7: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 7: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+7:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 7: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 7: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+7:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 8,
+          "title": "Day 8: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 8 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 8: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 8: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+8:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 8: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 8: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+8:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 9,
+          "title": "Day 9: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 9 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 9: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 9: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+9:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 9: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 9: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+9:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 10,
+          "title": "Day 10: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 10 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 10: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 10: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+10:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 10: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 10: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+10:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 11,
+          "title": "Day 11: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 11 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 11: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 11: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+11:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 11: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 11: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+11:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 12,
+          "title": "Day 12: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 12 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 12: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 12: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+12:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 12: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 12: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+12:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 13,
+          "title": "Day 13: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 13 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 13: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 13: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+13:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 13: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 13: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+13:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 14,
+          "title": "Day 14: Advanced python programming Concepts",
+          "objectives": [
+            "Understand key concepts of python programming",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 14 of your python programming learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about python programming fundamentals",
+            "Watch educational videos on python programming",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to python programming - Online Tutorial",
+            "python programming Best Practices Guide",
+            "Practice exercises for python programming"
+          ],
+          "key_concepts": [
+            "python programming fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 14: Advanced python programming Concepts",
+              "description": "A comprehensive introduction to Day 14: Advanced python programming Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+14:+Advanced+python+programming+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 14: Advanced python programming Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 14: Advanced python programming Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+14:+Advanced+python+programming+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        }
+      ],
+      "youtube_playlist": {
+        "title": "Learning Path: python programming",
+        "description": "Curated videos for your python programming learning journey",
+        "videos": [
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 1: Introduction to python programming",
+            "description": "A comprehensive introduction to Day 1: Introduction to python programming covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+1:+Introduction+to+python+programming",
+            "day": 1,
+            "day_title": "Day 1: Introduction to python programming"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 1: Introduction to python programming Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 1: Introduction to python programming.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+1:+Introduction+to+python+programming+tutorial",
+            "day": 1,
+            "day_title": "Day 1: Introduction to python programming"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 2: Advanced python programming Concepts",
+            "description": "A comprehensive introduction to Day 2: Advanced python programming Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+2:+Advanced+python+programming+Concepts",
+            "day": 2,
+            "day_title": "Day 2: Advanced python programming Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 2: Advanced python programming Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 2: Advanced python programming Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+2:+Advanced+python+programming+Concepts+tutorial",
+            "day": 2,
+            "day_title": "Day 2: Advanced python programming Concepts"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 3: Advanced python programming Concepts",
+            "description": "A comprehensive introduction to Day 3: Advanced python programming Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+3:+Advanced+python+programming+Concepts",
+            "day": 3,
+            "day_title": "Day 3: Advanced python programming Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 3: Advanced python programming Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 3: Advanced python programming Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+3:+Advanced+python+programming+Concepts+tutorial",
+            "day": 3,
+            "day_title": "Day 3: Advanced python programming Concepts"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 4: Advanced python programming Concepts",
+            "description": "A comprehensive introduction to Day 4: Advanced python programming Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+4:+Advanced+python+programming+Concepts",
+            "day": 4,
+            "day_title": "Day 4: Advanced python programming Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 4: Advanced python programming Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 4: Advanced python programming Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+4:+Advanced+python+programming+Concepts+tutorial",
+            "day": 4,
+            "day_title": "Day 4: Advanced python programming Concepts"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 5: Advanced python programming Concepts",
+            "description": "A comprehensive introduction to Day 5: Advanced python programming Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+5:+Advanced+python+programming+Concepts",
+            "day": 5,
+            "day_title": "Day 5: Advanced python programming Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 5: Advanced python programming Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 5: Advanced python programming Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+5:+Advanced+python+programming+Concepts+tutorial",
+            "day": 5,
+            "day_title": "Day 5: Advanced python programming Concepts"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 6: Advanced python programming Concepts",
+            "description": "A comprehensive introduction to Day 6: Advanced python programming Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+6:+Advanced+python+programming+Concepts",
+            "day": 6,
+            "day_title": "Day 6: Advanced python programming Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 6: Advanced python programming Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 6: Advanced python programming Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+6:+Advanced+python+programming+Concepts+tutorial",
+            "day": 6,
+            "day_title": "Day 6: Advanced python programming Concepts"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 7: Advanced python programming Concepts",
+            "description": "A comprehensive introduction to Day 7: Advanced python programming Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+7:+Advanced+python+programming+Concepts",
+            "day": 7,
+            "day_title": "Day 7: Advanced python programming Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 7: Advanced python programming Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 7: Advanced python programming Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+7:+Advanced+python+programming+Concepts+tutorial",
+            "day": 7,
+            "day_title": "Day 7: Advanced python programming Concepts"
+          }
+        ]
+      },
+      "id": "path_20250923_165827",
+      "user_id": "demo_user_123",
+      "created_at": "2025-09-23 16:58:27.702485"
+    },
+    "path_20250923_170043": {
+      "goal": "communication skill",
+      "duration_days": 14,
+      "difficulty": "beginner",
+      "type": "normal",
+      "description": "A comprehensive 14-day journey to master communication skill at beginner level",
+      "created_with_ai": false,
+      "daily_plans": [
+        {
+          "day": 1,
+          "title": "Day 1: Introduction to communication skill",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 1 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 1: Introduction to communication skill",
+              "description": "A comprehensive introduction to Day 1: Introduction to communication skill covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+1:+Introduction+to+communication+skill"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 1: Introduction to communication skill Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 1: Introduction to communication skill.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+1:+Introduction+to+communication+skill+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 2,
+          "title": "Day 2: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 2 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 2: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 2: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+2:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 2: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 2: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+2:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 3,
+          "title": "Day 3: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 3 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 3: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 3: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+3:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 3: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 3: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+3:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 4,
+          "title": "Day 4: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 4 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 4: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 4: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+4:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 4: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 4: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+4:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 5,
+          "title": "Day 5: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 5 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 5: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 5: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+5:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 5: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 5: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+5:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 6,
+          "title": "Day 6: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 6 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 6: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 6: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+6:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 6: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 6: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+6:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 7,
+          "title": "Day 7: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 7 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 7: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 7: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+7:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 7: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 7: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+7:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 8,
+          "title": "Day 8: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 8 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 8: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 8: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+8:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 8: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 8: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+8:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 9,
+          "title": "Day 9: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 9 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 9: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 9: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+9:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 9: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 9: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+9:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 10,
+          "title": "Day 10: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 10 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 10: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 10: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+10:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 10: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 10: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+10:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 11,
+          "title": "Day 11: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 11 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 11: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 11: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+11:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 11: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 11: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+11:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 12,
+          "title": "Day 12: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 12 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 12: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 12: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+12:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 12: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 12: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+12:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 13,
+          "title": "Day 13: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 13 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 13: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 13: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+13:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 13: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 13: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+13:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        },
+        {
+          "day": 14,
+          "title": "Day 14: Advanced communication skill Concepts",
+          "objectives": [
+            "Understand key concepts of communication skill",
+            "Apply beginner level techniques",
+            "Complete practical exercises"
+          ],
+          "content": "This is day 14 of your communication skill learning journey. Focus on building foundational knowledge and applying concepts through practice.",
+          "activities": [
+            "Read about communication skill fundamentals",
+            "Watch educational videos on communication skill",
+            "Complete hands-on exercises"
+          ],
+          "estimated_time": "2-3 hours",
+          "resources": [
+            "Introduction to communication skill - Online Tutorial",
+            "communication skill Best Practices Guide",
+            "Practice exercises for communication skill"
+          ],
+          "key_concepts": [
+            "communication skill fundamentals",
+            "beginner level applications",
+            "Real-world examples"
+          ],
+          "recommended_videos": [
+            {
+              "video_id": "demo1",
+              "title": "Introduction to Day 14: Advanced communication skill Concepts",
+              "description": "A comprehensive introduction to Day 14: Advanced communication skill Concepts covering all the basics you need to know.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+              "channel": "Demo Learning Channel",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+14:+Advanced+communication+skill+Concepts"
+            },
+            {
+              "video_id": "demo2",
+              "title": "Day 14: Advanced communication skill Concepts Best Practices",
+              "description": "Learn the best practices and advanced techniques for Day 14: Advanced communication skill Concepts.",
+              "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+              "channel": "Expert Learning Hub",
+              "published_at": "2024-01-01T00:00:00Z",
+              "url": "https://www.youtube.com/results?search_query=Day+14:+Advanced+communication+skill+Concepts+tutorial"
+            }
+          ],
+          "audio_available": false
+        }
+      ],
+      "youtube_playlist": {
+        "title": "Learning Path: communication skill",
+        "description": "Curated videos for your communication skill learning journey",
+        "videos": [
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 1: Introduction to communication skill",
+            "description": "A comprehensive introduction to Day 1: Introduction to communication skill covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+1:+Introduction+to+communication+skill",
+            "day": 1,
+            "day_title": "Day 1: Introduction to communication skill"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 1: Introduction to communication skill Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 1: Introduction to communication skill.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+1:+Introduction+to+communication+skill+tutorial",
+            "day": 1,
+            "day_title": "Day 1: Introduction to communication skill"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 2: Advanced communication skill Concepts",
+            "description": "A comprehensive introduction to Day 2: Advanced communication skill Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+2:+Advanced+communication+skill+Concepts",
+            "day": 2,
+            "day_title": "Day 2: Advanced communication skill Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 2: Advanced communication skill Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 2: Advanced communication skill Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+2:+Advanced+communication+skill+Concepts+tutorial",
+            "day": 2,
+            "day_title": "Day 2: Advanced communication skill Concepts"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 3: Advanced communication skill Concepts",
+            "description": "A comprehensive introduction to Day 3: Advanced communication skill Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+3:+Advanced+communication+skill+Concepts",
+            "day": 3,
+            "day_title": "Day 3: Advanced communication skill Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 3: Advanced communication skill Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 3: Advanced communication skill Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+3:+Advanced+communication+skill+Concepts+tutorial",
+            "day": 3,
+            "day_title": "Day 3: Advanced communication skill Concepts"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 4: Advanced communication skill Concepts",
+            "description": "A comprehensive introduction to Day 4: Advanced communication skill Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+4:+Advanced+communication+skill+Concepts",
+            "day": 4,
+            "day_title": "Day 4: Advanced communication skill Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 4: Advanced communication skill Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 4: Advanced communication skill Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+4:+Advanced+communication+skill+Concepts+tutorial",
+            "day": 4,
+            "day_title": "Day 4: Advanced communication skill Concepts"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 5: Advanced communication skill Concepts",
+            "description": "A comprehensive introduction to Day 5: Advanced communication skill Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+5:+Advanced+communication+skill+Concepts",
+            "day": 5,
+            "day_title": "Day 5: Advanced communication skill Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 5: Advanced communication skill Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 5: Advanced communication skill Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+5:+Advanced+communication+skill+Concepts+tutorial",
+            "day": 5,
+            "day_title": "Day 5: Advanced communication skill Concepts"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 6: Advanced communication skill Concepts",
+            "description": "A comprehensive introduction to Day 6: Advanced communication skill Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+6:+Advanced+communication+skill+Concepts",
+            "day": 6,
+            "day_title": "Day 6: Advanced communication skill Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 6: Advanced communication skill Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 6: Advanced communication skill Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+6:+Advanced+communication+skill+Concepts+tutorial",
+            "day": 6,
+            "day_title": "Day 6: Advanced communication skill Concepts"
+          },
+          {
+            "video_id": "demo1",
+            "title": "Introduction to Day 7: Advanced communication skill Concepts",
+            "description": "A comprehensive introduction to Day 7: Advanced communication skill Concepts covering all the basics you need to know.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video",
+            "channel": "Demo Learning Channel",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+7:+Advanced+communication+skill+Concepts",
+            "day": 7,
+            "day_title": "Day 7: Advanced communication skill Concepts"
+          },
+          {
+            "video_id": "demo2",
+            "title": "Day 7: Advanced communication skill Concepts Best Practices",
+            "description": "Learn the best practices and advanced techniques for Day 7: Advanced communication skill Concepts.",
+            "thumbnail": "https://via.placeholder.com/320x180?text=Demo+Video+2",
+            "channel": "Expert Learning Hub",
+            "published_at": "2024-01-01T00:00:00Z",
+            "url": "https://www.youtube.com/results?search_query=Day+7:+Advanced+communication+skill+Concepts+tutorial",
+            "day": 7,
+            "day_title": "Day 7: Advanced communication skill Concepts"
+          }
+        ]
+      },
+      "id": "path_20250923_170043",
+      "user_id": "demo_user_6ee9e9487f8663cf",
+      "created_at": "2025-09-23 17:00:43.230729"
     }
   },
   "progress": {
@@ -861,6 +2534,44 @@
         "14": false
       },
       "last_updated": "2025-09-23T16:34:34.230273"
+    },
+    "demo_user_123_path_20250923_165827": {
+      "completed_days": {
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": false,
+        "13": false,
+        "14": false
+      },
+      "last_updated": "2025-09-23T16:58:27.894021"
+    },
+    "demo_user_6ee9e9487f8663cf_path_20250923_170043": {
+      "completed_days": {
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": false,
+        "13": false,
+        "14": false
+      },
+      "last_updated": "2025-09-23T17:00:43.753974"
     }
   },
   "notifications": {}
