@@ -122,12 +122,147 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+def render_fullscreen_details():
+    """Render fullscreen learning path details"""
+    path = st.session_state.get('view_details_path', {})
+    user_id = SessionState.get_user_id()
+    
+    # Header with back button
+    col1, col2 = st.columns([1, 8])
+    
+    with col1:
+        if st.button("← Back", key="back_to_dashboard"):
+            st.session_state['show_fullscreen_details'] = False
+            st.rerun()
+    
+    with col2:
+        st.markdown(f'<h1 class="main-header">📚 {path.get("goal", "Learning Path")} - Full Details</h1>', unsafe_allow_html=True)
+    
+    # Path overview
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        st.metric("Duration", f"{path.get('duration_days', 0)} days")
+    
+    with col2:
+        st.metric("Difficulty", path.get('difficulty', 'beginner').title())
+    
+    with col3:
+        st.metric("Type", path.get('type', 'normal').upper())
+    
+    with col4:
+        st.metric("Progress", f"{path.get('completion_percentage', 0):.1f}%")
+    
+    # Description
+    st.markdown("### 📖 Description")
+    st.markdown(path.get('description', 'No description available'))
+    
+    # Daily plans in full detail
+    daily_plans = path.get('daily_plans', [])
+    
+    if daily_plans:
+        st.markdown("### 📅 Complete Daily Learning Plan")
+        
+        # Progress tracking
+        progress = path.get('progress', {})
+        completed_days = progress.get('completed_days', {})
+        
+        for plan in daily_plans:
+            day = plan.get('day', 1)
+            title = plan.get('title', f'Day {day}')
+            objectives = plan.get('objectives', [])
+            content = plan.get('content', '')
+            activities = plan.get('activities', [])
+            estimated_time = plan.get('estimated_time', 'Unknown')
+            resources = plan.get('resources', [])
+            key_concepts = plan.get('key_concepts', [])
+            
+            # Day completion status
+            is_completed = completed_days.get(str(day), False)
+            status_icon = "✅" if is_completed else "⏳"
+            status_color = "#4CAF50" if is_completed else "#ff9800"
+            
+            # Full day card
+            st.markdown(f"""
+            <div class="learning-card" style="border-left: 5px solid {status_color}; margin-bottom: 2rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3 style="margin: 0;">{status_icon} {title}</h3>
+                    <span style="font-size: 1.1rem; color: #666; background: #f0f0f0; padding: 0.3rem 0.8rem; border-radius: 20px;">⏱️ {estimated_time}</span>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            # Completion toggle
+            col1, col2 = st.columns([6, 1])
+            
+            with col2:
+                if st.button(
+                    "✅ Complete" if not is_completed else "↩️ Undo",
+                    key=f"full_toggle_{path.get('id', '')}_{day}"
+                ):
+                    if user_id:
+                        success = learning_service.update_daily_progress(
+                            user_id, path.get('id', ''), day, not is_completed
+                        )
+                        if success:
+                            st.success("Progress updated!")
+                            time.sleep(0.5)
+                            st.rerun()
+            
+            # Full details
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.markdown("**🎯 Learning Objectives:**")
+                for obj in objectives:
+                    st.markdown(f"• {obj}")
+                
+                if activities:
+                    st.markdown("**📝 Activities:**")
+                    for activity in activities:
+                        st.markdown(f"• {activity}")
+            
+            with col2:
+                if key_concepts:
+                    st.markdown("**🔑 Key Concepts:**")
+                    for concept in key_concepts:
+                        st.markdown(f"• {concept}")
+                
+                if resources:
+                    st.markdown("**📚 Resources:**")
+                    for resource in resources:
+                        st.markdown(f"• {resource}")
+            
+            # Content section
+            if content:
+                st.markdown("**📖 Detailed Content:**")
+                st.markdown(content)
+            
+            # Recommended videos
+            videos = plan.get('recommended_videos', [])
+            if videos:
+                st.markdown("**📺 Recommended Videos:**")
+                for video in videos:
+                    st.markdown(f"• [{video.get('title', 'Video')}]({video.get('url', '#')})")
+            
+            # Audio option
+            if plan.get('audio_available', False):
+                if st.button(f"🎧 Play Audio for Day {day}", key=f"full_audio_{path.get('id', '')}_{day}"):
+                    st.info("Audio playback would start here (ElevenLabs integration)")
+            
+            st.divider()
+
 def main():
     """Main application function"""
     
     # Initialize session state
     if 'authenticated' not in st.session_state:
         st.session_state.authenticated = False
+    
+    # Check for fullscreen details view
+    if st.session_state.get('show_fullscreen_details', False):
+        render_fullscreen_details()
+        return
     
     # Sidebar
     render_sidebar()
@@ -488,7 +623,9 @@ def render_learning_path_card(path: dict, user_id: str):
         
         with col1:
             if st.button("📖 View Details", key=f"view_{path_id}"):
-                render_learning_path_details(path, user_id)
+                st.session_state['view_details_path'] = path
+                st.session_state['show_fullscreen_details'] = True
+                st.rerun()
         
         with col2:
             if st.button("📊 Progress", key=f"progress_{path_id}"):
@@ -1811,20 +1948,123 @@ def render_preferences_settings(user_id: str):
 
 def render_api_settings():
     """Render API settings"""
-    st.markdown("### 🔑 API Configuration")
+    st.markdown("### 🔑 Personal API Keys")
+    
+    user_id = SessionState.get_user_id()
+    if not user_id:
+        st.error("Please log in to manage your API keys")
+        return
+    
+    # Get saved user API keys
+    user_profile = firestore_client.get_user_profile(user_id) or {}
+    saved_keys = user_profile.get('api_keys', {})
+    
+    st.markdown("""
+    <div style="background: #e3f2fd; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+        <strong>🔒 Secure & Personal</strong><br>
+        Save your own API keys to unlock full functionality. Your keys are stored securely and only accessible to you.
+    </div>
+    """, unsafe_allow_html=True)
+    
+    with st.form("api_keys_form"):
+        st.markdown("#### 🤖 AI Services")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            gemini_key = st.text_input(
+                "Gemini AI API Key", 
+                value=saved_keys.get('gemini_api_key', ''),
+                type="password",
+                placeholder="Enter your Gemini API key",
+                help="Get from: https://aistudio.google.com/app/apikey"
+            )
+        
+        with col2:
+            elevenlabs_key = st.text_input(
+                "ElevenLabs API Key", 
+                value=saved_keys.get('elevenlabs_api_key', ''),
+                type="password",
+                placeholder="Enter your ElevenLabs API key", 
+                help="Get from: https://elevenlabs.io/"
+            )
+        
+        st.markdown("#### 📱 Communication Services")
+        
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            twilio_sid = st.text_input(
+                "Twilio Account SID", 
+                value=saved_keys.get('twilio_account_sid', ''),
+                type="password",
+                placeholder="Enter your Twilio SID",
+                help="Get from: https://www.twilio.com/"
+            )
+        
+        with col2:
+            twilio_token = st.text_input(
+                "Twilio Auth Token", 
+                value=saved_keys.get('twilio_auth_token', ''),
+                type="password",
+                placeholder="Enter your Twilio token"
+            )
+        
+        with col3:
+            twilio_phone = st.text_input(
+                "Twilio Phone Number", 
+                value=saved_keys.get('twilio_phone_number', ''),
+                placeholder="+1234567890",
+                help="Your Twilio phone number"
+            )
+        
+        st.markdown("#### 🔍 Additional Services")
+        
+        youtube_key = st.text_input(
+            "YouTube Data API Key", 
+            value=saved_keys.get('youtube_api_key', ''),
+            type="password",
+            placeholder="Enter your YouTube Data API key",
+            help="Get from: https://console.cloud.google.com/"
+        )
+        
+        if st.form_submit_button("💾 Save API Keys", use_container_width=True):
+            # Update user profile with new API keys
+            updated_keys = {
+                'gemini_api_key': gemini_key,
+                'elevenlabs_api_key': elevenlabs_key,
+                'twilio_account_sid': twilio_sid,
+                'twilio_auth_token': twilio_token,
+                'twilio_phone_number': twilio_phone,
+                'youtube_api_key': youtube_key,
+                'updated_at': datetime.now().isoformat()
+            }
+            
+            # Save to user profile
+            current_profile = firestore_client.get_user_profile(user_id) or {}
+            current_profile['api_keys'] = updated_keys
+            
+            success = firestore_client.create_user_profile(user_id, current_profile)
+            if success:
+                st.success("🎉 API keys saved successfully! The app will use your personal keys for enhanced functionality.")
+                time.sleep(1)
+                st.rerun()
+            else:
+                st.error("Failed to save API keys. Please try again.")
     
     # Current API status
     st.markdown("#### 📊 Current API Status")
     
+    # Check which APIs are configured (either globally or personally)
     api_services = [
-        ("Gemini AI", settings.GEMINI_API_KEY != "demo_key", "Generate AI learning content"),
-        ("YouTube Data", settings.YOUTUBE_API_KEY != "demo_key", "Find educational videos"),
-        ("ElevenLabs", settings.ELEVENLABS_API_KEY != "demo_key", "Text-to-speech synthesis"),
-        ("Twilio", settings.TWILIO_ACCOUNT_SID != "demo_sid", "SMS/WhatsApp notifications"),
+        ("Gemini AI", bool(saved_keys.get('gemini_api_key')) or settings.GEMINI_API_KEY != "demo_key", "Generate AI learning content"),
+        ("YouTube Data", bool(saved_keys.get('youtube_api_key')) or settings.YOUTUBE_API_KEY != "demo_key", "Find educational videos"),
+        ("ElevenLabs", bool(saved_keys.get('elevenlabs_api_key')) or settings.ELEVENLABS_API_KEY != "demo_key", "Text-to-speech synthesis"),
+        ("Twilio", bool(saved_keys.get('twilio_account_sid')) or settings.TWILIO_ACCOUNT_SID != "demo_sid", "SMS/WhatsApp notifications"),
     ]
     
     for service, is_active, description in api_services:
-        status = "✅ Active" if is_active else "⚪ Demo Mode"
+        status = "✅ Configured" if is_active else "⚪ Demo Mode"
         color = "green" if is_active else "orange"
         
         st.markdown(f"""

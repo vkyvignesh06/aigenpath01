@@ -46,28 +46,34 @@ class GeminiClient:
             Difficulty level: {difficulty}
             Learning approach: {practice_text}
 
+            IMPORTANT: Focus ONLY on {goal}-related concepts and practical skills. 
+            - Avoid generic HTML content or unrelated information
+            - Make content highly specific to {goal} with real examples and hands-on projects  
+            - Include actual code examples, specific frameworks, and practical exercises
+            - NO generic placeholder content or HTML markup in the response
+
             Please structure the response as a JSON object with the following format:
             {{
                 "goal": "{goal}",
                 "duration_days": {duration},
                 "difficulty": "{difficulty}",
-                "description": "Brief description of what the learner will achieve",
+                "description": "Brief description of what the learner will achieve in {goal}",
                 "daily_plans": [
                     {{
                         "day": 1,
-                        "title": "Day title",
-                        "objectives": ["Objective 1", "Objective 2"],
-                        "content": "Detailed content for the day",
-                        "activities": ["Activity 1", "Activity 2"],
+                        "title": "Day title focused on {goal}",
+                        "objectives": ["Specific {goal} objective 1", "Specific {goal} objective 2"],
+                        "content": "Detailed {goal}-specific content for the day - NO generic HTML or markup",
+                        "activities": ["Hands-on {goal} activity 1", "Practical {goal} exercise 2"],
                         "estimated_time": "2-3 hours",
-                        "resources": ["Resource 1", "Resource 2"],
-                        "key_concepts": ["Concept 1", "Concept 2"]
+                        "resources": ["Specific {goal} resource 1", "Relevant {goal} documentation"],
+                        "key_concepts": ["{goal} concept 1", "{goal} concept 2"]
                     }}
                 ]
             }}
 
-            Make sure each day builds upon previous days and includes practical, actionable content.
-            Include specific topics, not just general advice.
+            Make sure each day builds upon previous days with SPECIFIC {goal} topics and practical projects.
+            Include only {goal}-related content, code examples, and hands-on exercises.
             """
 
             response = self.client.models.generate_content(
