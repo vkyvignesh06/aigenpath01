@@ -3,6 +3,7 @@ from datetime import datetime
 import json
 import streamlit as st
 from ai_services.gemini_client import gemini_client
+from ai_services.langchain_integration import langchain_integration
 
 class MCPIntegration:
     """Model Context Protocol integration for adaptive learning"""
@@ -75,13 +76,18 @@ class MCPIntegration:
         try:
             # Enhance the goal with context-aware information
             enhanced_context = self._enhance_context_for_mcp(user_context)
+            enhanced_context.update({
+                'goal': goal,
+                'duration': duration,
+                'difficulty': difficulty
+            })
             
-            # Generate the path using Gemini with MCP approach
-            learning_path = gemini_client.generate_mcp_learning_path(
-                goal=goal,
+            # Use LangChain integration for enhanced context awareness
+            learning_path = langchain_integration.create_learning_path_with_context(
+                user_context={'enhanced_context': enhanced_context},
+                learning_goal=goal,
                 duration=duration,
-                difficulty=difficulty,
-                context_data=enhanced_context
+                difficulty=difficulty
             )
             
             # Add MCP-specific enhancements
@@ -91,7 +97,13 @@ class MCPIntegration:
             
         except Exception as e:
             st.error(f"Failed to generate adaptive path: {str(e)}")
-            return self._fallback_adaptive_path(goal, duration, difficulty)
+            # Fallback to regular MCP generation
+            return gemini_client.generate_mcp_learning_path(
+                goal=goal,
+                duration=duration,
+                difficulty=difficulty,
+                context_data=enhanced_context
+            )
 
     def _enhance_context_for_mcp(self, user_context: Dict[str, Any]) -> Dict[str, Any]:
         """Enhance context with MCP-specific data"""
