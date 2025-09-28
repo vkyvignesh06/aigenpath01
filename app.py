@@ -10,7 +10,8 @@ import pandas as pd
 from auth.firebase_auth import firebase_auth
 from services.learning_service import learning_service
 from services.notification_service import notification_service
-from ai_services.mcp_integration import mcp_integration
+from ai_services.enhanced_mcp_integration import enhanced_mcp_integration
+from pages.api_key_management import api_key_manager
 from integrations.youtube_client import youtube_client
 from integrations.elevenlabs_client import elevenlabs_client
 from integrations.twilio_client import twilio_client
@@ -226,7 +227,7 @@ def show_main_app():
         page = st.selectbox(
             "Navigate",
             ["🏠 Dashboard", "➕ Create Learning Path", "📚 My Learning Paths", 
-             "📊 Progress Analytics", "🔔 Notifications", "⚙️ Settings"],
+             "📊 Progress Analytics", "🔔 Notifications", "🔑 API Keys", "⚙️ Settings"],
             key="main_navigation"
         )
         
@@ -255,6 +256,8 @@ def show_main_app():
         show_analytics(user_id)
     elif page == "🔔 Notifications":
         show_notifications(user_id)
+    elif page == "🔑 API Keys":
+        api_key_manager.show_api_key_management(user_id)
     elif page == "⚙️ Settings":
         show_settings(user_id)
 
@@ -405,7 +408,15 @@ def show_create_learning_path(user_id: str):
         
         # MCP-specific options
         if "MCP" in path_type:
-            st.subheader("🧠 MCP Configuration")
+            st.subheader("🧠 Enhanced MCP Configuration")
+            
+            # Check API key status
+            has_required_keys = api_key_manager.has_required_keys(user_id)
+            if not has_required_keys:
+                st.warning("⚠️ Enhanced MCP features require API keys. Configure them in the API Keys section.")
+                if st.button("🔑 Configure API Keys"):
+                    st.session_state.redirect_to = "🔑 API Keys"
+                    st.rerun()
             
             col1, col2 = st.columns(2)
             with col1:
@@ -450,12 +461,43 @@ def show_create_learning_path(user_id: str):
                     
                     # Add MCP-specific data
                     if "MCP" in path_type:
-                        path_data['mcp_context'] = {
+                        # Use enhanced MCP integration
+                        mcp_context = {
                             'learning_style': learning_style,
                             'time_per_day': time_per_day,
                             'previous_experience': previous_experience,
                             'specific_interests': specific_interests
                         }
+                        
+                        # Generate enhanced MCP path
+                        with st.spinner("🧠 Generating Enhanced MCP Learning Path..."):
+                            enhanced_path = enhanced_mcp_integration.generate_enhanced_mcp_path(
+                                user_id, goal, duration, difficulty, mcp_context
+                            )
+                            
+                            if enhanced_path:
+                                path_id = learning_service.save_enhanced_learning_path(user_id, enhanced_path)
+                                if path_id:
+                                    st.success("🎉 Enhanced MCP Learning Path created!")
+                                    st.balloons()
+                                    
+                                    # Show enhanced features
+                                    st.subheader("🚀 Enhanced MCP Features Activated")
+                                    
+                                    col1, col2 = st.columns(2)
+                                    with col1:
+                                        st.info("🔄 Real-time adaptation enabled")
+                                        st.info("🎯 GitHub-style progress tracking")
+                                    with col2:
+                                        st.info("🤖 Advanced AI personalization")
+                                        st.info("🔗 Multi-platform integration")
+                                    
+                                    if st.button("📚 View Enhanced Learning Path"):
+                                        st.session_state.redirect_to = "📚 My Learning Paths"
+                                        st.rerun()
+                                    return
+                        
+                        path_data['mcp_context'] = mcp_context
                     
                     path_id = learning_service.create_learning_path(user_id, path_data)
                     

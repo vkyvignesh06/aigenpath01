@@ -2,7 +2,7 @@ from typing import Dict, Any, List, Optional
 from datetime import datetime, timedelta
 import streamlit as st
 from ai_services.gemini_client import gemini_client
-from ai_services.mcp_integration import mcp_integration
+from ai_services.enhanced_mcp_integration import enhanced_mcp_integration
 from database.firestore_client import firestore_client
 from integrations.youtube_client import youtube_client
 from integrations.drive_client import drive_client
@@ -29,8 +29,9 @@ class LearningService:
             # Generate learning path based on type
             if path_type == 'mcp':
                 # Get user context for MCP
-                user_context = mcp_integration.collect_user_context(user_id)
-                learning_path = mcp_integration.generate_adaptive_path(
+                user_context = enhanced_mcp_integration.collect_user_context(user_id)
+                learning_path = enhanced_mcp_integration.generate_enhanced_mcp_path(
+                    user_id,
                     goal=goal,
                     duration=duration,
                     difficulty=difficulty,
@@ -167,7 +168,7 @@ class LearningService:
             
             if success and completed:
                 # Track analytics for MCP paths
-                self._track_mcp_progress(user_id, path_id, day)
+                self._track_enhanced_mcp_progress(user_id, path_id, day)
                 
             return success
             
@@ -175,7 +176,7 @@ class LearningService:
             st.error(f"Failed to update progress: {str(e)}")
             return False
 
-    def _track_mcp_progress(self, user_id: str, path_id: str, day: int):
+    def _track_enhanced_mcp_progress(self, user_id: str, path_id: str, day: int):
         """Track progress for MCP analytics"""
         try:
             daily_progress = {
@@ -187,7 +188,7 @@ class LearningService:
                 'timestamp': datetime.now()
             }
             
-            mcp_integration.track_learning_progress(user_id, path_id, daily_progress)
+            enhanced_mcp_integration.track_learning_progress(user_id, path_id, daily_progress)
             
         except Exception as e:
             st.error(f"Failed to track MCP progress: {str(e)}")
@@ -322,6 +323,36 @@ class LearningService:
                 
         except Exception as e:
             st.error(f"Failed to export learning path: {str(e)}")
+            return None
+
+    def save_enhanced_learning_path(self, user_id: str, learning_path: Dict[str, Any]) -> Optional[str]:
+        """Save enhanced MCP learning path"""
+        try:
+            path_id = f"enhanced_mcp_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+            learning_path['id'] = path_id
+            learning_path['user_id'] = user_id
+            learning_path['created_at'] = datetime.now()
+            learning_path['enhanced_mcp'] = True
+
+            # Enhance with multimedia content
+            learning_path = self._enhance_with_multimedia(learning_path)
+            
+            # Save to database
+            saved_path_id = firestore_client.save_learning_path(user_id, learning_path)
+            
+            if saved_path_id:
+                # Create Google Drive document
+                self._create_drive_document(learning_path)
+                
+                # Initialize progress tracking
+                self._initialize_progress_tracking(user_id, saved_path_id, learning_path.get('duration_days', 7))
+                
+                return saved_path_id
+            
+            return None
+            
+        except Exception as e:
+            st.error(f"Failed to save enhanced learning path: {str(e)}")
             return None
 
     def duplicate_learning_path(self, user_id: str, path_id: str) -> Optional[str]:
