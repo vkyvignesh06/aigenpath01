@@ -227,7 +227,7 @@ def show_main_app():
             "Navigate",
             ["🏠 Dashboard", "➕ Create Learning Path", "📚 My Learning Paths", 
              "📊 Progress Analytics", "🔔 Notifications", "⚙️ Settings"],
-            key="navigation"
+            key="main_navigation"
         )
         
         st.markdown("---")
@@ -240,6 +240,11 @@ def show_main_app():
             st.rerun()
     
     # Main content based on selected page
+    # Handle redirects
+    if 'redirect_to' in st.session_state:
+        page = st.session_state.redirect_to
+        del st.session_state.redirect_to
+    
     if page == "🏠 Dashboard":
         show_dashboard(user_id)
     elif page == "➕ Create Learning Path":
@@ -326,12 +331,12 @@ def show_dashboard(user_id: str):
                 with col3:
                     if st.button(f"Continue", key=f"continue_{path.get('id', '')}"):
                         st.session_state.selected_path = path
-                        st.session_state.navigation = "📚 My Learning Paths"
+                        st.session_state.redirect_to = "📚 My Learning Paths"
                         st.rerun()
     else:
         st.info("🚀 Ready to start your learning journey? Create your first learning path!")
         if st.button("➕ Create Learning Path", use_container_width=True):
-            st.session_state.navigation = "➕ Create Learning Path"
+            st.session_state.redirect_to = "➕ Create Learning Path"
             st.rerun()
     
     # Learning recommendations
@@ -474,7 +479,7 @@ def show_create_learning_path(user_id: str):
                             
                             if st.button("📚 View Full Learning Path"):
                                 st.session_state.selected_path = created_path
-                                st.session_state.navigation = "📚 My Learning Paths"
+                                st.session_state.redirect_to = "📚 My Learning Paths"
                                 st.rerun()
 
 def show_learning_paths(user_id: str):
@@ -491,7 +496,7 @@ def show_learning_paths(user_id: str):
     if not learning_paths:
         st.info("🚀 You haven't created any learning paths yet!")
         if st.button("➕ Create Your First Learning Path", use_container_width=True):
-            st.session_state.navigation = "➕ Create Learning Path"
+            st.session_state.redirect_to = "➕ Create Learning Path"
             st.rerun()
         return
     
